@@ -33,7 +33,7 @@
 }
 
 .drum-pad:hover {
-  background-color: #1c1c1c;
+  background-color: orange !important;
 }
 
 .pad-first-row {
@@ -77,6 +77,11 @@
   height: 100px;
   background-color: royalblue;
   border: 4px solid #1c1c1c;
+  color: snow;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #volume {
