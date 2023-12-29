@@ -56,7 +56,6 @@ function App() {
     if (on) {
       if (e.key === 'q'|| e.key === 'Q') {
         handleClick('Q');
-        console.log(on)
       }
     
       if (e.key === 'w' || e.key === 'W') {
@@ -117,7 +116,7 @@ function App() {
         <div className="controls">
           <button id="power" className={on ? 'power btn-power-on' : 'power btn-power-off'} onClick={handlePower}>Power</button>
           <div id="display" className={on ? 'display-on' : 'display-off'}></div>
-          <input type="range" id='volume' name='volume' min={0} max={1} step={0.1} onChange={handleVolume} />
+          <input value={volume} type="range" id='volume' name='volume' min={0} max={1} step={0.1} onChange={handleVolume} />
         </div>
       </div>
   )
